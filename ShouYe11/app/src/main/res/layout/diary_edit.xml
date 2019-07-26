@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorBackground">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_edit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+            <ImageView
+                android:id="@+id/back"
+                android:src="@drawable/back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="left" />
+            <TextView
+                android:id="@+id/shouye"
+                android:text="日记"
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+            <ImageView
+                android:id="@+id/save"
+                android:src="@drawable/save"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right" />
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right">
+                <ImageView
+                    android:id="@+id/record"
+                    android:src="@drawable/mic"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right" />
+                <ImageView
+                    android:id="@+id/delete_audio"
+                    android:src="@drawable/delete_audio"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_gravity="right" />
+            </FrameLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <EditText
+        android:id="@+id/edit_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="题目："
+        android:maxLines="1"
+        android:scrollbars="vertical" />
+
+    <EditText
+        android:id="@+id/edit_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="内容："
+        android:gravity="top"
+        android:scrollbars="vertical"
+        android:background="@null"/>
+
+</LinearLayout>

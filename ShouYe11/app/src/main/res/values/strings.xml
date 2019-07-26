@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">花瓣日记</string>
+    <string-array name="accounting_type_array">
+        <item>收入</item>
+        <item>支出</item>
+    </string-array>
+</resources>

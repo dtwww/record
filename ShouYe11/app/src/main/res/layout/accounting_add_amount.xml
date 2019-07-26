@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_height="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/back3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/back"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"/>
+
+            <TextClock
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="jelly_bean_mr1"
+                android:format24Hour="yyyy年MM月"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/button_save"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/save"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"/>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="类型"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+            <Spinner
+                android:id="@+id/accounting_type_spinner"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="60dp"
+                android:textSize="20dp"
+                android:layout_gravity="left" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="单价"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/add_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00"
+                android:selectAllOnFocus="true"
+                android:textSize="20dp"
+                android:inputType="numberDecimal"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ems="12"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数量"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/add_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textSize="20dp"
+                android:selectAllOnFocus="true"
+                android:inputType="number"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:ems="12"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"/>
+            <EditText
+                android:id="@+id/add_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入收入或消费项目"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="20dp"
+                android:maxLines="1"
+                android:ems="12"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextClock
+                android:id="@+id/add_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:targetApi="jelly_bean_mr1"
+                android:format24Hour="yyyy年MM月dd日 HH:mm"
+                android:layout_alignParentRight="true"
+                android:layout_margin="15dp"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

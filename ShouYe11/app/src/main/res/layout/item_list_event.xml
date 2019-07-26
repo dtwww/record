@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextClock
+            android:id="@+id/event_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:targetApi="jelly_bean_mr1"
+            android:format24Hour="yyyy年MM月dd日 HH:mm"
+            android:layout_gravity="left"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/event_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
